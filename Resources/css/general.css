@@ -1,20 +1,15 @@
 body{
-    width:94%;
-    position:absolute;
-    height:100%;
-    margin-left:2%;
-    top:0px;
-    background-color:#fafafa;
-    border: 6pt solid #777;
-    border-width: 0px 10px 0px 10px;
-    border-style:groove;
-    overflow:hidden;
+    margin:0px;
+    background-color: #555;
+    color: #fafafa;
+    font-family: "Arial";
 }
 #relative_content{
     position:relative;
-    
+
 }
 #title{
     margin:auto;
     text-align:center;
+
 }
