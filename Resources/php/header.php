@@ -2,7 +2,7 @@
   session_start();
   echo("header here");
 
-  header("Location: /login.php");
+  header("Location: /homeportal/login.php");
   exit;
 
 

@@ -8,7 +8,7 @@ Maxwell Gariety. This includes on personal projects.
     <head>
       <?php
         session_start();
-        include("/Resources/php/userdb.php");
+        include("/homeportal/Resources/php/userdb.php");
       ?>
         <meta charset="UTF-8">
         <title>Login || The Gariety Portal</title>
@@ -61,6 +61,8 @@ Maxwell Gariety. This includes on personal projects.
         <div id="textbox">
           <div id="loader1"></div>
           <div id="loader2"></div>
+          <div id="loader3"></div>
+          <div id="loader4"></div>
         </div>
       </div>
     </body>
