@@ -26,7 +26,7 @@ Maxwell Gariety. This includes on personal projects.
           <table>
             <tr><th colspan="2"><h2 style="text-align:center; padding-top:20px;">Please Log In</h2></th></tr>
             <tr><td>Username:</td><td><input type="text" name="username" placeholder="Username"></input></td></tr>
-            <tr><td>Password:</td><td><input type="text" name="password" placeholder="Password"></input></td></tr>
+            <tr><td>Password:</td><td><input type="password" name="password" placeholder="Password"></input></td></tr>
           </table>
           <br />
           <table>
@@ -42,9 +42,9 @@ Maxwell Gariety. This includes on personal projects.
         <form id="create_user" class="login_form">
           <table>
             <tr><th colspan="2"><h2 style="text-align:center; padding-top:20px;">Please Create an Acount</h2></th></tr>
-            <tr><td>Name:</td><td><input type="text" name="name" placeholder="Password"></input></td></tr>
+            <tr><td>Name:</td><td><input type="text" name="name" placeholder="Name"></input></td></tr>
             <tr><td>Username:</td><td><input type="text" name="new_user" placeholder="Username"></input></td></tr>
-            <tr><td>Password:</td><td><input type="text" name="new_pass" placeholder="Password"></input></td></tr>
+            <tr><td>Password:</td><td><input type="password" name="new_pass" placeholder="Password"></input></td></tr>
           </table>
           <br />
           <table>
