@@ -45,9 +45,11 @@
     height:150px;
     width:150px;
     margin:auto;
-    border:4px solid gray;
-    border-style:groove;
+    border:4px solid #333;
     border-radius: 10px;
+    -moz-box-shadow:    5px 5px 20px #000;
+    -webkit-box-shadow: 5px 5px 20px #000;
+    box-shadow:         5px 5px 20px #000;
 }
 
 .link:active {
@@ -65,9 +67,9 @@
     border:1px outset black;
     border-radius: 5px;
     background-color:#555;
-    /*-moz-box-shadow:    inset 0 0 10px #000000;
-    -webkit-box-shadow: inset 0 0 10px #000000;
-    box-shadow:         inset 0 0 10px #000000;*/
+    -moz-box-shadow:    inset 5px 5px 10px #ccc;
+    -webkit-box-shadow: inset 5px 5px 10px #ccc;
+    box-shadow:         inset 5px 5px 10px #ccc;
 }
 .space{
     width:15%;

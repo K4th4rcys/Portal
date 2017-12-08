@@ -8,7 +8,7 @@ Maxwell Gariety. This includes on personal projects.
     <head>
       <?php
         session_start();
-        include("/homeportal/Resources/php/userdb.php");
+        include("/Resources/php/userdb.php");
       ?>
         <meta charset="UTF-8">
         <title>Login || The Gariety Portal</title>
@@ -43,14 +43,13 @@ Maxwell Gariety. This includes on personal projects.
           <table>
             <tr><th colspan="2"><h2 style="text-align:center; padding-top:20px;">Please Create an Acount</h2></th></tr>
             <tr><td>Name:</td><td><input type="text" name="name" placeholder="Password"></input></td></tr>
-            <tr><td>Email:</td><td><input type="text" name="email" placeholder="Password"></input></td></tr>
             <tr><td>Username:</td><td><input type="text" name="new_user" placeholder="Username"></input></td></tr>
             <tr><td>Password:</td><td><input type="text" name="new_pass" placeholder="Password"></input></td></tr>
           </table>
           <br />
           <table>
             <tr>
-              <td><input type="button" id="log_in" class="login_btn" value="Log In"/></td>
+              <td><input type="button" id="log_in" class="login_btn" value="Use Log In"/></td>
               <td style="width:20px;"></td>
               <td><input type="button" id="submit" class="login_btn" value="Submit" /></td>
             </tr>
@@ -65,5 +64,6 @@ Maxwell Gariety. This includes on personal projects.
           <div id="loader4"></div>
         </div>
       </div>
+
     </body>
 </html>

@@ -27,19 +27,23 @@ $(document).ready(function() {
   beforeSend:function(){
     // this is where we append a loading image
     $('#ajax_loader').show();
-    $('#textbox').html('');
   },
   success:function(data){
     // successful request; do something with the data
-    $('#ajax-panel').empty();
-    $(data).find('item').each(function(i){
-      $('#ajax-panel').append('<h4>' + $(this).find('title').text() + '</h4><p>' + $(this).find('link').text() + '</p>');
-    });
+    if (data['reply'] == "success"){
+      $('#ajax_loader').hide();
+      $('body').append("<div class=\"notification\">User creation successful.<button class=\"close\">X</button><br>You will be redirected.</div>");
+      setTimeout(function() {window.location.href = "/index.php";}, 3000);
+    } else {
+      $('#ajax_loader').hide();
+      $('body').append("<div class=\"notification\">Looks like your user wasn't created.<button class=\"close\">X</button><br>Please let Max know.</div>");
+    }
   },
   error:function(){
     // failed request; give feedback to user
-    $('#ajax-panel').html('<p class="error"><strong>Oops!</strong> Try that again in a few moments.</p>');
-  }
+  $('#ajax_loader').hide();
+$('body').append("<div class=\"notification\">There was an error...<button class=\"close\">X</button><br>Please let Max know.</div>");
+    }
 });
   });
 

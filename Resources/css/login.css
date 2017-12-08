@@ -1,3 +1,7 @@
+body{
+overflow:hidden;
+
+}
 #logo {
   text-align: center;
   margin:20px;
@@ -40,6 +44,7 @@
   display: inline-block;
   background-color:#404040;
   border-radius:5px;
+  border: 4px solid #404040;
 }
 
 .login_btn:hover{
@@ -51,6 +56,7 @@ color:#ddd;
 }
 
 #ajax_loader{
+  display: none;
   z-index: 5;
   top:0px;
   left:0px;
@@ -124,14 +130,33 @@ color:#ddd;
 	0% { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
 }
-  /*position: absolute;
-  margin:auto;
-  top:0px;
-  width:100%;
-  height:100%;
-  z-index: 150;
-  border-left:10px solid rgb(71,221,189);
-  border-radius: 50%;
-  background-image: url('../images/rightloader.png');
-  animation: spin 2s linear infinite;
-}*/
+.close{
+  float:right;
+  margin: 2px;
+}
+.notification {
+    padding:5px;
+    position: absolute;
+    right: -400px;
+    bottom:10px;
+    width: 350px;
+    height: auto;
+    background: #444;
+    border: 6px solid black;
+    border-radius:20px;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: .2s;
+    animation: slide 0.5s forwards;
+    animation-delay: .2s;
+    -moz-box-shadow: 10px 10px 25px #000000;
+    -webkit-box-shadow: 10px 10px 25px #000000;
+    box-shadow: 10px 10px 25px #000000;
+}
+
+@-webkit-keyframes slide {
+    100% { right: 0; }
+}
+
+@keyframes slide {
+    100% { right: 0; }
+}

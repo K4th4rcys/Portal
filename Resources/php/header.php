@@ -1,11 +1,9 @@
 <?php
   session_start();
   echo("header here");
-
-  header("Location: /homeportal/login.php");
+  if(!isset($_SESSION['user'])) {
+  header("Location: /login.php");
+  }
   exit;
-
-
-
 
  ?>
